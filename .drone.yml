@@ -1,0 +1,5 @@
+docker_build: &docker_build
+  image: golang:1.13-alpine
+    commands: 
+      - apk --update add --no-cache make gcc libc-dev
+    repo: 056684691971.dkr.ecr.us-east-1.amazonaws.com/sre/kubernetes/node-lifecycle-operator
